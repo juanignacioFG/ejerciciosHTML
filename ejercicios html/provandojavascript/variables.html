@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <script type="text/javascript">
+         var x = 1;
+        var contador = 1;
+        var nombre;
+        function start()
+        {
+            var x = 5;
+            document.writeln("La variable local x al comienzo es: " + x);
+            nombre = window.prompt("Introduzca su nombre")//variable local nombre 
+            functionA(nombre);
+            functionB();
+            nombre = window.prompt("Introduzca su nombre")//reinicializamos la variable nombre 
+            functionA(nombre);
+            functionB();
+            document.writeln("<p>variable global x, depués de las funciones" + x + "</p>");
+            document.writeln("<p>el nombre de la variable local x es <b> " + nombre + "</b></p>");
+            document.writeln("<p>El contador es: <b>" + contador + "</b></p>");
+
+        }//fin de la funcion start
+
+        function functionA(nombre)
+        {
+            var x = 25; //se reinicializa cuando llamamos a la función A
+            document.writeln("<p>variable global x, en función A es: " + x + "</p>");
+            x++;
+            contador++;
+            document.writeln("<p>La variable global x, en función A, después de incrementar es: " + x + "</p>");
+            document.writeln("<p>El nombre de la variable global x, en función A es: " + nombre + "</p>");
+            document.writeln("<p>El contador, en función A, después de incrementar es: " + contador + "</p>");
+        }//fin de la función A
+        function functionB()
+        {
+            var x = 25; //se reinicializa cuando llamamos a la función A
+            document.writeln("<p>variable global x,  es: " + x + "al entrar en la función B</p>");
+            x*=10;
+            contador++;
+            document.writeln("<p>La variable global x, en función B, después de incrementar es: " + x + "al salir de la función B</p>");
+            document.writeln("<p>El nombre de la variable global x, en función B es: " + nombre + "</p>");
+            document.writeln("<p>El contador, en función B, después de incrementar es: " + contador + "</p>");
+        }//fin de la función B
+        
+        
+    </script>
+</head>
+<body onload="start()">
+
+    
+</body>
+</html>
