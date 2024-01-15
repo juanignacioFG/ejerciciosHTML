@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title> ejercicio vertical_align</title>
+<meta charset="utf-8"/>
+	<style>
+	.text{vertical-align:40%}
+	</style>
+		<body>
+			<table>
+				<tr>
+					<td style="font-size=20">celda1</td>
+					<td style="font-size=80">celda2</td>
+				</tr>
+			
+			</table>
+		</body>
+</head>
+
+
+
+</html>

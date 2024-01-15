@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empezamosjavascript2</title>
+
+    <script type="text/javascript">
+
+      /*  function Pepe(ramiro, gutierrez, sanchez) {
+            this.ramiro = ramiro;
+            this.gutierrez = gutierrez;
+            this.sanchez = sanchez;
+            //alert("los tres mosqueteros");
+        }
+        Pepe.prototype.ramiro = "Pepe";
+        Pepe.prototype.gutierrez = "perro";
+        Pepe.prototype.sanchez = "60";
+
+
+
+        alert("edades")
+
+
+        var pepe1 = new Pepe("dni:66666l", "pepe", "helado");
+        var pepe2 = new Pepe("dhdhdhhd", "banana", "sable");
+        var pepe3 = new Pepe("234567j", "perro", "gato");
+
+
+
+        alert("dnis " + pepe1.ramiro)*/
+
+      /*  function Cliente(nombre,edad,dni){
+            this.nombre=nombre || Cliente.prototype.nombre ;
+            this.edad=edad || 35;
+            this.dni=dni;
+           // alert("creacion de objeto de la clase cliente")
+        
+        }
+            Cliente.prototype.nombre= "maria ledesman";
+            Cliente.prototype.edad=35;
+            Cliente.prototype.dni="66666l";
+            Cliente.prototype.saludaMaria= function(){ alert ("cliente maria ledesma")
+         }
+        
+            var cliente1 = new Cliente();
+            alert("el primer cliente es:" + cliente1.nombre  + "edad: " + cliente1.edad+ "dni "+cliente1.dni);
+            cliente1.saludaMaria();
+         */
+
+        /* window.alert("hola\tmudo");    */
+
+
+      /*  var nombre;
+
+        nombre=window.prompt("introduzca cualquier cosa");
+
+        document.writeln("hola "+ nombre +" Bienvenido" )*/
+
+
+
+         //a continuacion vemos ejemplos de una ventana prompt hecha de diferentes maneras(la sirve solo con numeros par, pero se puede modificar para en lugar de par, reconozca cualquier otro numero asi como contraseña)
+
+
+         var numerosecret;
+
+         numerosecret=window.prompt("introduce el numero secreto (tiene que ser par)");
+
+       if (numerosecret %2==0){
+            document.writeln("es un numero par");
+
+        }else{
+            document.writeln("no es el numero correcto")
+        }  
+
+            function esunnumeropar(numero){
+                return numero %2== 0;  //AQUI PODIAMOS PONER OTRO NUMERO QUITANDO %2==0 Y PONIENDO SOLO ==47 POR EJEMPLO
+            }
+            if
+                (esunnumeropar(numerosecret)){
+                document.writeln("es un numero par");
+                }else{
+                document.writeln("no es un numero par");
+            }
+           
+            //A CONTINUACION comprobamos los datos de entrada con NaN= NOT A NUMBER (si no es un numero no contestara)
+            
+           if(!isNaN(numerosecret)){
+                document.writeln("es un numero")
+            }else{
+                document.writeln("no es un numero, por favor, no moleste mas")
+            } 
+            
+            
+            
+            
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

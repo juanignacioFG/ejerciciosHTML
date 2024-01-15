@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+			<style>
+			h1{text-transform:uppercase}
+		
+			</style>
+				
+				<body>
+				<h1>titulo en mayuscula</h1>
+				<p>todo el texto en mayuscula</p>
+				
+				</body>
+
+	</head>
+
+</html>

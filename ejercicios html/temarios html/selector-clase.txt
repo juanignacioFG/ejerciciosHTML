@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>separacion de clases</title>
+		<meta charset="utf-8"/>
+	</head>
+			<body>
+				<a href="documento1.html" class="enlace_con _estilo">enlace con estilo</a>
+				<a href="documento1.html" class="enlace_con _estilo2">enlace con estilo</a>
+				<a href="documento1.html">enlace con estilo</a>
+					<a href="documento1.html">enlace con estilo2</a>
+		
+		
+			</body>
+
+
+
+
+</html>

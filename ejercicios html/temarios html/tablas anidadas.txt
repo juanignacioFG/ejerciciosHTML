@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+	<title>tablas anidadas</title>
+	<meta charset="uft-8"/>
+</head>
+	<body>
+	<table border="1">
+	<tr>
+	<td>celda tabla principal</td>
+	<td> celda de tabla principal</td>
+	</tr>
+	
+	
+	</table></table>
+	
+	
+	</table>
+	
+	
+	</body>
+	</html>
