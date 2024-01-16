@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadenasjs</title>
+    <script type="text/javascript">
+
+
+        var cadena = "Rincon de la Victoria"
+
+        /*  document.writeln(cadena.length);     */           //length muestra el numero de caracteres de "rincon de la victoria"
+
+        document.writeln("<br>" + cadena.substring(10));            // muestra a partir de el caracter 10, en este caso mostraria "la Victoria"
+        document.writeln("<br>" + cadena.substring(0, 10));         //mustra del caracter 0 al caracter 10, este caso "Rincon de"
+        document.writeln("<br>" + cadena.substring(-5));            //muestra la cadena original porque no existe no existe caracter menor que 0
+       
+
+        //devuelve un caracter
+
+        document.writeln("<br>"+cadena.charAt(5));           //mostraria solo el caracter numero 5 de la cadena, en este caso la "n" de rincon
+
+        //une dos cadenas
+
+        var cadena2="Malaga";
+        var cadena3="Malagu";
+
+        document.writeln("<br>"+cadena.concat(cadena2));        //muestra "Rincon de la VictoriaMalaga" porque concatena(une) la var cadena y la var cadena2
+        
+        //indexOf 0 o -1
+
+        document.writeln("<br>"+cadena.indexOf("Rincon"));   //muestra 0 porque     "Rincon" si esta dentro de la cadena 
+        document.writeln("<br>"+cadena.indexOf("Victoria",0));   // mostraria el numero de caracteres de la cadena desde que empieza en 0 hasta llegar al caravter Victoria
+        document.writeln("<br>"+cadena.indexOf("Malaga"));          //mostraria -1 porque Malaga no se muestra dentro de la cadena
+      
+
+        //replace
+
+        
+        document.writeln("<br>"+cadena.replace("Victoria","arbol"));  //reemplaza un elemento de la cadena de la variable cadena por otra que pongamos
+       
+
+        //split - division de cadenas en un array de cadenas (un array es un conjunto de caracteres )
+
+        document.writeln("<br>"+cadena.split(" "));          //devuelve un array de 4 cadenas (Rincon +de+ la+ Victoria). en este caso dividimos por espacios la cadena y los espacios se sustitullen por comas (o split)
+        document.writeln("<br>"+cadena.split("a"));            // devuelve un array de 2 elementos (Rincon de l, Victori,) . en este caso divide la cadena en 2 porque solo hay 2 a 
+        document.writeln("<br>"+cadena.split(","));             // devuelve un array de x cadenas por cada "," que halla en la cadena. en este caso al no haber ninguna "," en la cadena no mhace division 
+        document.writeln("<br>"+cadena.split(""));              // divide la cadena entre"," por cada caracter en este caso se veria cada letra de la cadena dividida por ","
+
+        //TolowerCase - devuelve la caradena en minusculas
+
+        document.writeln("<br>"+cadena.toLowerCase());
+
+        //ToUpperCase - devuelve la cadena en mayusculas
+
+        document.writeln("<br>"+cadena.toUpperCase());
+
+
+
+
+        
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
